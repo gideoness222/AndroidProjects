@@ -4,9 +4,11 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TabHost;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     EditText nametxt,phonetxt,emailtxt,addresstxt;
@@ -22,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
         emailtxt = (EditText)findViewById(R.id.etEmail);
         addresstxt = (EditText)findViewById(R.id.etAddress);
 
-        final Button addBtn = (Button)findViewById(R.id.addButton);
         TabHost tabhost = (TabHost)findViewById(R.id.tabhost);
 
         tabhost.setup();
@@ -36,6 +37,14 @@ public class MainActivity extends AppCompatActivity {
         tabspec.setContent(R.id.tabContactList);
         tabspec.setIndicator("List");
         tabhost.addTab(tabspec);
+
+        final Button addBtn = (Button)findViewById(R.id.addButton);
+        addBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(),"Your contact has been created!",Toast.LENGTH_SHORT).show();
+            }
+        });
 
 
         nametxt.addTextChangedListener(new TextWatcher() {
