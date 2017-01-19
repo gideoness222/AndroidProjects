@@ -1,3 +1,3 @@
 # Projects
 
-projects done in my personal time 
+projects done in my leisure time 
