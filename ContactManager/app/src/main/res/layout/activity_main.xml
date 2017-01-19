@@ -13,7 +13,8 @@
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:id="@+id/tabhost">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -100,7 +101,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/tabContactStore"
+                    android:id="@+id/tabContactList"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
