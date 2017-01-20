@@ -16,7 +16,7 @@
         android:layout_alignParentStart="true"
         android:id="@+id/tabhost">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
@@ -31,7 +31,35 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <LinearLayout
+                <RelativeLayout
+                    android:id="@+id/tabContactList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false"
+                    android:weightSum="1"
+                    android:clipToPadding="false"
+                    android:clipChildren="false">
+
+                    <TextView
+                        android:text="TextView"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/textView"
+                        android:layout_weight="0.24"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="60dp"
+                        android:layout_height="20dp" />
+
+                    <ListView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="88dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
                     android:id="@+id/tabCreator"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -98,17 +126,9 @@
                         android:layout_centerHorizontal="true"
                         android:id="@+id/addButton"
                         android:enabled="false" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/tabContactList"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                </LinearLayout>
+                </RelativeLayout>
 
             </FrameLayout>
-        </LinearLayout>
+        </RelativeLayout>
     </TabHost>
 </RelativeLayout>

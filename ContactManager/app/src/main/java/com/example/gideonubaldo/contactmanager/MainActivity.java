@@ -5,14 +5,18 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TabHost;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
     EditText nametxt,phonetxt,emailtxt,addresstxt;
-
+    List<Contact> Contacts = new ArrayList<Contact>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,5 +67,11 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+    }
+    private class ContactListAdapter extends ArrayAdapter<Contact>{
+        public ContactListAdapter(){
+            super(MainActivity.this, R.layout.listview_item, Contacts);
+
+        }
     }
 }
