@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.TabHost;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -19,6 +20,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
     EditText nametxt,phonetxt,emailtxt,addresstxt;
     List<Contact> Contacts = new ArrayList<Contact>();
+    ListView contactListView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
         phonetxt = (EditText)findViewById(R.id.etPhoneNumber);
         emailtxt = (EditText)findViewById(R.id.etEmail);
         addresstxt = (EditText)findViewById(R.id.etAddress);
+        contactListView = (ListView) findViewById(R.id.listview);
+
 
         TabHost tabhost = (TabHost)findViewById(R.id.tabhost);
 
@@ -49,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 addContact(nametxt.getText().toString(),phonetxt.getText().toString(),emailtxt.getText().toString(),addresstxt.getText().toString());
+                populateList();
                 Toast.makeText(getApplicationContext(),"Your contact has been created!", Toast.LENGTH_SHORT).show();
             }
         });
@@ -71,6 +76,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+    private void populateList(){
+        ArrayAdapter<Contact> adapter = new ContactListAdapter();
+        contactListView.setAdapter(adapter);
+    }
+
     private void addContact(String name,String phone,String email,String address){
         Contacts.add(new Contact(name,phone,email,address));
     }
