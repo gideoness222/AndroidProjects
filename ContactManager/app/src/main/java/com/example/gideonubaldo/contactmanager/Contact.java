@@ -15,7 +15,6 @@ public class Contact {
     }
     public String get_name(){return _name;}
     public String get_phone(){return _phone;}
-
     public String get_address() {
         return _address;
     }
