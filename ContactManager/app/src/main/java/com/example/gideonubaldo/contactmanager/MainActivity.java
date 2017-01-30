@@ -100,11 +100,11 @@ public class MainActivity extends AppCompatActivity {
 
             TextView name = (TextView) view.findViewById(R.id.contactname);
             name.setText(currentContact.get_name());
-            TextView address = (TextView) view.findViewById(R.id.address);
+            TextView address = (TextView) view.findViewById(R.id.cAddress);
             address.setText(currentContact.get_address());
-            TextView email = (TextView) view.findViewById(R.id.email);
+            TextView email = (TextView) view.findViewById(R.id.cEmail);
             email.setText(currentContact.get_email());
-            TextView phone = (TextView) view.findViewById(R.id.phone);
+            TextView phone = (TextView) view.findViewById(R.id.cPhone);
             phone.setText(currentContact.get_phone());
 
             return view;

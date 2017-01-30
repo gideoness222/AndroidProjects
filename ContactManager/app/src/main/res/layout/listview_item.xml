@@ -11,7 +11,7 @@
         android:id="@+id/contactname"
         android:layout_marginLeft="12dp"
         android:layout_marginStart="12dp"
-        android:layout_marginTop="11dp"
+        android:layout_marginTop="60dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Button"
         tools:fontFamily="casual"
         android:layout_alignParentTop="true"
