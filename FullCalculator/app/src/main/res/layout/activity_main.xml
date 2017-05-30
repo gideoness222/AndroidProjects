@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gideonubaldo.fullcalculator.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <Button
+            android:id="@+id/percentagebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/plusandminusbutton"
+            android:layout_alignBottom="@+id/plusandminusbutton"
+            android:layout_toEndOf="@+id/plusandminusbutton"
+            android:layout_toRightOf="@+id/plusandminusbutton"
+            android:text="%"
+            tools:layout_editor_absoluteX="192dp"
+            tools:layout_editor_absoluteY="259dp" />
+
+        <Button
+            android:id="@+id/divisionbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ninebutton"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/percentagebutton"
+            android:text="/"
+            tools:layout_editor_absoluteX="280dp"
+            tools:layout_editor_absoluteY="259dp" />
+
+        <Button
+            android:id="@+id/plusandminusbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/eightbutton"
+            android:layout_toEndOf="@+id/acbutton"
+            android:layout_toRightOf="@+id/acbutton"
+            android:text="+/-"
+            tools:layout_editor_absoluteX="104dp"
+            tools:layout_editor_absoluteY="259dp" />
+
+        <Button
+            android:id="@+id/acbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/plusandminusbutton"
+            android:layout_alignBottom="@+id/plusandminusbutton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="AC"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="259dp" />
+
+        <Button
+            android:id="@+id/sevenbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/acbutton"
+            android:layout_toLeftOf="@+id/plusandminusbutton"
+            android:layout_toStartOf="@+id/plusandminusbutton"
+            android:text="7"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="307dp" />
+
+        <Button
+            android:id="@+id/eightbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/fivebutton"
+            android:layout_toEndOf="@+id/acbutton"
+            android:layout_toRightOf="@+id/acbutton"
+            android:text="8"
+            tools:layout_editor_absoluteX="104dp"
+            tools:layout_editor_absoluteY="307dp" />
+
+        <Button
+            android:id="@+id/ninebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/eightbutton"
+            android:layout_alignBottom="@+id/eightbutton"
+            android:layout_toEndOf="@+id/plusandminusbutton"
+            android:layout_toRightOf="@+id/plusandminusbutton"
+            android:text="9"
+            tools:layout_editor_absoluteX="192dp"
+            tools:layout_editor_absoluteY="307dp" />
+
+        <Button
+            android:id="@+id/multiplicationbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/divisionbutton"
+            android:layout_toEndOf="@+id/percentagebutton"
+            android:layout_toRightOf="@+id/percentagebutton"
+            android:text="*"
+            tools:layout_editor_absoluteX="280dp"
+            tools:layout_editor_absoluteY="307dp" />
+
+        <Button
+            android:id="@+id/fivebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/onebutton"
+            android:layout_toEndOf="@+id/sevenbutton"
+            android:layout_toRightOf="@+id/sevenbutton"
+            android:text="5"
+            tools:layout_editor_absoluteX="104dp"
+            tools:layout_editor_absoluteY="352dp" />
+
+        <Button
+            android:id="@+id/fourbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/fivebutton"
+            android:layout_alignBottom="@+id/fivebutton"
+            android:layout_toLeftOf="@+id/eightbutton"
+            android:layout_toStartOf="@+id/eightbutton"
+            android:text="4"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="352dp" />
+
+        <Button
+            android:id="@+id/sixbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/minusbutton"
+            android:layout_alignBottom="@+id/minusbutton"
+            android:layout_alignLeft="@+id/ninebutton"
+            android:layout_alignStart="@+id/ninebutton"
+            android:text="6"
+            tools:layout_editor_absoluteX="192dp"
+            tools:layout_editor_absoluteY="352dp" />
+
+        <Button
+            android:id="@+id/minusbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/multiplicationbutton"
+            android:layout_toEndOf="@+id/ninebutton"
+            android:layout_toRightOf="@+id/ninebutton"
+            android:text="-"
+            tools:layout_editor_absoluteX="280dp"
+            tools:layout_editor_absoluteY="352dp" />
+
+        <Button
+            android:id="@+id/onebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/zerobutton"
+            android:layout_alignLeft="@+id/zerobutton"
+            android:layout_alignStart="@+id/zerobutton"
+            android:text="1"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="400dp" />
+
+        <Button
+            android:id="@+id/twobutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fivebutton"
+            android:layout_toLeftOf="@+id/sixbutton"
+            android:layout_toStartOf="@+id/sixbutton"
+            android:text="2"
+            tools:layout_editor_absoluteX="104dp"
+            tools:layout_editor_absoluteY="400dp" />
+
+        <Button
+            android:id="@+id/threebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sixbutton"
+            android:layout_toEndOf="@+id/fivebutton"
+            android:layout_toRightOf="@+id/fivebutton"
+            android:text="3"
+            tools:layout_editor_absoluteX="192dp"
+            tools:layout_editor_absoluteY="400dp" />
+
+        <Button
+            android:id="@+id/addbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/minusbutton"
+            android:layout_toEndOf="@+id/sixbutton"
+            android:layout_toRightOf="@+id/sixbutton"
+            android:text="+"
+            tools:layout_editor_absoluteX="280dp"
+            tools:layout_editor_absoluteY="400dp" />
+
+        <Button
+            android:id="@+id/zerobutton"
+            android:layout_width="176dp"
+            android:layout_height="47dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="0"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="448dp" />
+
+        <Button
+            android:id="@+id/equalbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_toEndOf="@+id/threebutton"
+            android:layout_toRightOf="@+id/threebutton"
+            android:text="="
+            tools:layout_editor_absoluteX="280dp"
+            tools:layout_editor_absoluteY="447dp" />
+
+        <Button
+            android:id="@+id/dotbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/twobutton"
+            android:layout_toRightOf="@+id/twobutton"
+            android:text="."
+            tools:layout_editor_absoluteX="192dp"
+            tools:layout_editor_absoluteY="447dp" />
+
+        <TextView
+            android:id="@+id/output"
+            android:layout_width="127dp"
+            android:layout_height="42dp"
+            android:layout_marginBottom="46dp"
+            android:text="result"
+            android:textAlignment="center"
+            tools:layout_editor_absoluteX="129dp"
+            tools:layout_editor_absoluteY="191dp"
+            android:layout_above="@+id/percentagebutton"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
