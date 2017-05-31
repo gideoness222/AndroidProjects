@@ -2,6 +2,7 @@ package com.example.gideonubaldo.fullcalculator;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.StringBuilderPrinter;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -115,6 +116,26 @@ public class MainActivity extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 output.setText(output.getText() + ".");
+            }
+        });
+        percentbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                var1 = (Double.parseDouble(output.getText() + ""));
+                output.setText((var1/100.0) + "");
+            }
+        });
+
+        plusandminusbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String var1 = output.getText().toString();
+                StringBuilder sb = new StringBuilder(var1);
+                if(sb.)
+                    output.setText("-" + output.getText());
+                else
+
+                    //output.setText(var1.replace('-', null));
             }
         });
 
